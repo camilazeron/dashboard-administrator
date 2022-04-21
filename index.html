@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Engloba Sistemas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <img src="img/engloba.png" alt="">
+            </div>
+            <div class="menu"><i class="fa fa-align-justify"></i></div>
+            <div class="search-conteiner">
+                <div class="select">
+                    <select name="select">
+                    <option value="valor1">Código 1</option>
+                    <option value="valor2" selected>Código 2</option>
+                    <option value="valor3">Código 3</option>
+                  </select>
+                </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+        </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/perfil.png" alt="Foto do perfil de acesso">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-truck"></i>
+                        <div>Operações</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Gestão</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Financeiro</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-gavel"></i>
+                        <div>Ferramentas</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tasks"></i>
+                        <div>integrações</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Configurações</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Operações</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-truck"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Gestão</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Financeiro</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Ferramentas</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-gavel"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Integrações</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Configurações</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Ganhos (últimos 12 meses)</h2>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="chart doughnut-chart">
+                    <h2>Funcionários</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+                <div class="chart doughnut-chart">
+                    <h2>Operações</h2>
+                    <canvas id="lineLineChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
